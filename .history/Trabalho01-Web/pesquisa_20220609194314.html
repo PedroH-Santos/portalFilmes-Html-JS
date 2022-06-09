@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5342ce2135.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Portal de Filmes</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <div class="row">
+                <span class="col-xl-1 col-sm-12 col-12 logoContainer">
+                    <a href="index.html">
+                        <img src="./images/logo.png" class="logo mt-1" />
+                    </a>
+                </span>
+
+                <div class="menu col-xl-8  mt-4">
+                    <ul class="nav justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#lancamentos"> lançamentos <span class="m-1">
+                                    | </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#populares"> Populares <span class="m-1"> | </span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ultimasAvaliacoes"> Personalidades <span class="m-1"> |
+                                </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#entrevistaMaking"> Em breve <span class="m-1"> | </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades"> Novidades </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pesquisa col-xl-3 mt-4">
+                    <div class="input-group mb-3">
+                        <a class="input-group-text input-search emptyInputSearch"><i class="fas fa-times"></i></a>
+
+                        <form action="pesquisa.html" method="get" class="formSearch"> 
+                            <input type="text" class="form-control searchInput" name="search" aria-label="Amount (to the nearest dollar)">
+                        </form>
+                        <a href="#" class="searchButton"> 
+                            <span class="input-group-text input-search"><i class="fas fa-search"></i></span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menuMobile">
+            <a href="#" class="toogle-menu" onclick="showMobile()"> <i class="fas fa-bars"></i> </a>
+            <div class="containerLinks">
+                <ul class="nav-mobile" id="menuMob">
+                    <li class="nav-item d-block">
+                        <a class="nav-link" aria-current="page" href="#lancamentos"> lançamentos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#populares"> Populares </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ultimasAvaliacoes"> Personalidades </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#entrevistaMaking"> Em breve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novidades"> Novidades </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+
+        <section id="populares" class="blockType2">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-9  col-sm-12  col-12 mt-4">
+                        <h1 class="mt-4 "> Filmes Populares </h1>
+                    </div>
+                    <div class="col-xl-3  col-sm-12 scol-12 mt-5">
+                        <select class="form-select form-select-lg mb-3 selectGenres"
+                            aria-label=".form-select-lg example">
+                        </select>
+                    </div>
+                </div>
+                <div class="popularsData">
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 mt-4">
+
+                    </div>
+                    <div class="col-xl-6 mt-4 d-flex justify-content-end mb-5">
+                        <button type="button" class="btn btn-primary btn-md addPagePopulars"><i class="fas fa-plus"></i>
+                            Carregar mais
+                            filmes</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="mt-4 footer">
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-11 col-sm-12 col-12 mt-4">
+                    <p> Copyright 2022 - Disciplina de Desenvolvimento de Interface Web - <span
+                            class="font-weight-bold"> ICEI PUC MINAS </span></p>
+                </div>
+
+                <span class="col-xl-1 col-sm-12 col-12 logoContainer">
+                    <img src="./images/logo.png" class="logo" />
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<script src="./scripts/geral.js"> </script>
+
+</html>

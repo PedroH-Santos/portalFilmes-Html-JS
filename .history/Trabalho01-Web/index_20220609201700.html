@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5342ce2135.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Portal de Filmes</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <div class="row">
+                <span class="col-xl-1 col-sm-12 col-12 logoContainer">
+                    <a href="index.html">
+                        <img src="./images/logo.png" class="logo mt-1" />
+                    </a>
+                </span>
+
+                <div class="menu col-xl-8  mt-4">
+                    <ul class="nav justify-content-end ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#lancamentos"> lançamentos <span class="m-1">
+                                    | </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#populares"> Populares <span class="m-1"> | </span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ultimasAvaliacoes"> Personalidades <span class="m-1"> |
+                                </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#entrevistaMaking"> Em breve <span class="m-1"> | </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades"> Novidades </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pesquisa col-xl-3 mt-4">
+                    <div class="input-group searchContainer mb-3 ">
+                        <a href="#" class="input-group-text input-search emptyInputSearch"><i
+                                class="fas fa-times"></i></a>
+
+                        <form action="pesquisa.html" method="get" class="formSearch">
+                            <input type="text" class="form-control searchInput input-search" name="search"
+                                aria-label="Amount (to the nearest dollar)">
+                        </form>
+                        <a href="#" class="searchButton">
+                            <span class="input-group-text input-search"><i class="fas fa-search"></i></span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="menuMobile">
+                <a href="#" class="toogle-menu showMobile" > <i class="fas fa-bars"></i> </a>
+                <div class="containerLinks">
+                    <ul class="nav-mobile" id="menuMob">
+                        <li class="nav-item d-block">
+                            <a class="nav-link" aria-current="page" href="#lancamentos"> lançamentos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#populares"> Populares </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ultimasAvaliacoes"> Personalidades </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#entrevistaMaking"> Em breve</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades"> Novidades </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <section id="lancamentos" class="blockType1 mb-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner playTodayData">
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+
+
+        <section id="populares" class="blockType2">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-9  col-sm-12  col-12 mt-4">
+                        <h1 class="mt-4 "> Filmes Populares </h1>
+                    </div>
+                    <div class="col-xl-3  col-sm-12 scol-12 mt-5">
+                        <select class="form-select form-select-lg mb-3 selectGenres"
+                            aria-label=".form-select-lg example">
+                        </select>
+                    </div>
+                </div>
+                <div class="popularsData">
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 mt-4">
+
+                    </div>
+                    <div class="col-xl-6 mt-4 d-flex justify-content-end mb-5">
+                        <button type="button" class="btn btn-primary btn-md addPagePopulars"><i class="fas fa-plus"></i>
+                            Carregar mais
+                            filmes</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section id="ultimasAvaliacoes" class="blockType2">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-9 mt-4">
+                        <h1 class="mt-4 "> Personalidades: </h1>
+                    </div>
+                </div>
+                <div class="avaliationData"> </div>
+                <div class="row">
+                    <div class="col-xl-6 mt-4">
+                    </div>
+                    <div class="col-xl-6 mt-4 d-flex justify-content-end mb-5">
+                        <button type="button" class="btn btn-primary btn-md addPageAvaliation"><i
+                                class="fas fa-plus"></i> Carregar mais
+                            avaliações</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="entrevistaMaking" class="blockType1">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-9 mt-4">
+                        <h1 class="mt-4 "> Em Breve : </h1>
+                    </div>
+                </div>
+                <div class="nextFilmsData ">
+
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 mt-4">
+                    </div>
+                    <div class="col-xl-6 mt-4 d-flex justify-content-end mb-5">
+                        <button type="button" class="btn btn-primary btn-md addPageNextFilms"><i
+                                class="fas fa-plus"></i> Carregar mais
+                            avaliações</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="novidades" class="blockType2">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 col-12 mt-4">
+                        <div class="row">
+                            <h1 class="mt-4"> Novidades </h1>
+                        </div>
+                        <div class="row mt-4 p-2 novidade-block">
+                            <div class="col-xl-4 containerImageNovidades">
+                                <img src="./images/novidades02.jpeg" class="img-novidades" />
+                            </div>
+                            <div class="col-xl-8">
+                                <h5> Sonic 2 lidera bilheterias nos EUA e fatura US$ 71 milhões em semana de estreia
+                                </h5>
+                                <p>Ao ocupar o primeiro lugar, o filme infantil da Paramount superou "Morbius", da Sony,
+                                    e a aventura da Universal dirigida por Michael Bay "Ambulância: Um Dia de Crime",
+                                    que estreou faturando decepcionantes US$ 8 milhões (cerca de R$ 37,5 milhões).</p>
+                                <button class="btn btn-primary btn-sm "> Sonic </button>
+                                <button class="btn btn-primary btn-sm "> Bilheteria </button>
+                                <button class="btn btn-primary btn-sm "> Liderança </button>
+                            </div>
+                        </div>
+                        <div class="row mt-4 p-2 novidade-block">
+                            <div class="col-xl-4 containerImageNovidades">
+                                <img src="./images/novidades03.jpeg" class="img-novidades" />
+                            </div>
+                            <div class="col-xl-8">
+                                <h5> 'Marighella' é o melhor longa do ano para crítica e público do Sesc Melhores Filmes
+                                </h5>
+                                <p>"Marighella", de Wagner Moura, foi o principal vencedor da 48 ª edição do Festival
+                                    Sesc Melhores Filmes, em relação aos longas que estrearam no ano passado.
+                                    "Marighella" foi eleito como melhor produção nacional na votação tanto do público
+                                    como da crítica. O papel principal foi interpretado por Seu Jorge, que também
+                                    recebeu a premiação de melhor ator na votação de público e críticos, que elegeram
+                                    ainda Moura como melhor diretor do ano passado. Os espectadores realmente gostaram
+                                    do longa, pois conferiram outros dois prêmios: melhor fotografia, para Adrian
+                                    Teijido, e melhor roteiro, dividido entre Moura e Felipe Braga</p>
+                                <button class="btn btn-primary btn-sm "> Melhor Longa </button>
+                                <button class="btn btn-primary btn-sm "> Sesc </button>
+                                <button class="btn btn-primary btn-sm ">Warner</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4 p-2 ">
+                            <div class="col-xl-4 containerImageNovidades">
+                                <img src="./images/novidades04.jpeg" class="img-novidades" />
+                            </div>
+                            <div class="col-xl-8">
+                                <h5> Festival de cinema tem exibição de filmes e workshops gratuitos em Jacareí </h5>
+                                <p>iO Festival de Cinema Curta Jacarehy começa nesta quarta-feira (6) e conta com a
+                                    exibição de curtas produzidos no interior do estado, além de workshops, palestras e
+                                    shows. O evento vai até sábado (9) no Pátio dos Trilhos.</p>
+                                <button class="btn btn-primary btn-sm "> Cinema </button>
+                                <button class="btn btn-primary btn-sm "> WorkShops </button>
+                                <button class="btn btn-primary btn-sm "> Jacareí </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 col-sm-12  col-12 mt-4">
+                        <div class="row">
+                            <h1 class="mt-4"> Sobre </h1>
+                        </div>
+                        <div class="row">
+                            <p class="mt-4"> Esse é um site direcionado à apresentar os clássicos dos filmes e suas
+                                novidades. É um projeto desenvolvido por Pedro Henrique dos Santos, aluno da PUC-MINAS,
+                                durante o primeiro período na matéria desenvolvimento de interfaces web no ano de 2022.
+                            </p>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h1 class="mt-4  mb-2"> Editorial </h1>
+                            <div class="row  mb-2">
+                                <span class="editorial-info">
+                                    <i class="fas fa-user"></i>
+                                    <h5 class=" d-inline-block font-weight-bold">Redação: </h5>
+                                    <span> Pedro Henrique dos Santos </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h1 class="mt-4  mb-2"> Redes Sociais </h1>
+                            <div class="row  mb-2 d-inline-block">
+                                <a href="https://facebook.com" target="_blank" class="redes-sociais-info">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="redes-sociais-info">
+                                    <i class="fab fa-twitter"></i> </a>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="redes-sociais-info">
+                                    <i class="fab fa-instagram"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer class="mt-4 footer">
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-11 col-sm-12 col-12 mt-4">
+                    <p> Copyright 2022 - Disciplina de Desenvolvimento de Interface Web - <span
+                            class="font-weight-bold"> ICEI PUC MINAS </span></p>
+                </div>
+
+                <span class="col-xl-1 col-sm-12 col-12 logoContainer">
+                    <img src="./images/logo.png" class="logo" />
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<script src="./scripts/geral.js"> </script>
+
+</html>

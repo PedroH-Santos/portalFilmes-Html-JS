@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(151 7 7);
+    ;
+}
+
+p {
+    break-word: break;
+}
+
+.logo {
+    width: 8em;
+    height: 4rem;
+}
+
+.menu {
+    display: inline-block;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(216, 200, 53);
+}
+
+
+
+.header {
+    background-color: rgba(255, 10, 10, 0.562)
+}
+
+.footer {
+    color: white;
+}
+
+.cardDestaque {
+    justify-content: end;
+}
+
+.cardDestaque > img{
+    max-width: 262px;
+    max-height: 388px;
+}
+
+
+.title-info.next {
+    color: rgb(216, 200, 53);
+}
+.text-info-sub{
+ font-size: 1.2rem;
+}
+
+
+.title-info {
+    display: inline-block;
+}
+
+.subdiv-info {
+    display: inline-block;
+}
+
+.div-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockType1 {
+    background-color: rgba(151, 7, 7, 0.562);
+    color: white;
+}
+
+.blockType2 {
+    background-color: white;
+    color: black;
+}
+
+.userCircle {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(151, 7, 7, 0.562);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dataAvaliacao {
+    font-weight: bold;
+}
+
+.avaliacoes input[type=radio] {
+    display: none;
+}
+
+.avaliacoes label i.fas:before {
+    color: rgb(216, 200, 53);
+}
+
+.avaliacoes input[type=radio]:checked~label i.fas:before {
+    color: #cccccc;
+}
+
+.img-novidades {
+    max-width: 190px;
+    max-height: 267px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: rgb(168, 156, 43);
+    border-color: rgb(168, 156, 43);
+}
+
+.btn-primary:hover {
+    background-color: rgb(151, 139, 32);
+    border-color: rgb(151, 139, 32);
+}
+
+.novidade-block {
+    border-bottom: 1px solid white;
+}
+
+.editorial-info i {
+    font-size: 20px;
+}
+
+.redes-sociais-info {
+    font-size: 40px;
+    color: rgb(168, 156, 43);
+
+}
+
+.redes-sociais-info:hover {
+    color: rgb(151, 139, 32);
+
+}
+
+.iframeLancamentos {
+    width: 100%;
+    height: 400px;
+}
+
+.menuMobile {
+    overflow: hidden;
+    display: none;
+}
+
+.nav-mobile {
+    list-style: none;
+    opacity: 0;
+    position: relative;
+    width: 200px;
+    z-index: 99999;
+    transition: opacity 0.4s linear;
+
+}
+.containerLinks{
+    position: absolute;
+    height: 20px;
+}
+.nav-mobile > .nav-item {
+    background-color: rgb(168, 156, 43);
+    text-decoration: none;
+    width: 100%;
+    z-index: 99999;
+
+}
+
+
+.toogle-menu {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+    display: block;
+
+} 
+
+.toogle-menu:hover {
+    color: rgb(168, 156, 43);
+}
+.input-group{
+    border: 3px solid rgb(216, 200, 53);
+    border-radius: 0.5rem;
+}
+.input-group input, .input-search{
+    border-color: rgb(216, 200, 53);
+    border: 0;
+    background-color: rgb(151 7 7);
+    color: white;
+}
+
+.form-control:focus  {
+    background-color: rgb(192 0 0);
+}
+
+.input-search {
+    background-color: rgb(151 7 7);
+    border: 0;
+}
+
+
+.imageFilm{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .pesquisa {
+        display: none;
+    }
+
+    .cardDestaque {
+        justify-content: center;
+    }
+
+    .cardMaking {
+        text-align: center;
+    }
+
+    .iframeLancamentos {
+        width: 100%;
+        height: 400px;
+    }
+
+    .iframeEntrevista {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .logoContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+    }
+
+    .containerImageNovidades{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .userCircle {
+        margin-right: 10px;
+    }
+}
+
+
+
+.searchButton{
+    background-color: rgb(151 7 7);
+    border: 0;
+    border-left: 3px solid #eee;
+    text-decoration: none;
+}
+.input-search{
+    text-decoration: none;
+    
+}
+.searchInput:focus {
+    color: #fff;
+}
+.emptyInputSearch{
+    border-right: 3px solid #eee;
+
+}
+.formSearch{
+    width: 100%;
+}
